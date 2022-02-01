@@ -20,6 +20,6 @@ public class StopWatch {
     }
 
     public double getElapsedTime() {
-        return (endTime - startTime) / (double)10e6;
+        return (double)(endTime - startTime) / 10e6;
     }
 }

@@ -9,7 +9,9 @@ public class Main {
         System.out.println("Month is " +currentTime.get(GregorianCalendar.MONTH));
         System.out.println("Date is " + currentTime.get(GregorianCalendar.DATE));
         System.out.println("Day of week is " + currentTime.get(GregorianCalendar.DAY_OF_WEEK));
+        
         System.out.println("-----------");
+        
         currentTime.add(GregorianCalendar.DATE, 1);
         System.out.println("After specified the elapsed time of one day after current day");
         System.out.println("Year is " + currentTime.get(GregorianCalendar.YEAR));
