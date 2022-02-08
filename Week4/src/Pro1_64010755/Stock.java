@@ -2,11 +2,11 @@ package Pro1_64010755;
 
 public class Stock {
 
-    public String symbol;
-    public String name;
-    public double previousClosingPrice = 34.5;
-    public double currentPrice = 34.35;
-    public double changePrice;
+    private String symbol;
+    private String name;
+    private double previousClosingPrice = 34.5;
+    private double currentPrice = 34.35;
+    private double changePrice;
 
     public Stock(String symbol,String name){
         this.symbol = symbol;

@@ -10,15 +10,15 @@ public class RegularPolygon {
     public RegularPolygon(){}
 
     public RegularPolygon(int n,double side){
-        this.n = n;
-        this.side = side;
+        this.n = Math.abs(n);
+        this.side = Math.abs(side);
         this.x = 0;
         this.y = 0;
     }
 
     public RegularPolygon(int n,double side,double x,double y){
-        this.n = n;
-        this.side = side;
+        this.n = Math.abs(n);
+        this.side = Math.abs(side);
         this.x = x;
         this.y = y;
     }
@@ -40,11 +40,11 @@ public class RegularPolygon {
     }
 
     public void setNumberOfSide(int new_n){
-        n = new_n;
+        n = Math.abs(new_n);
     }
 
     public void setLengthOfSide(double new_side){
-        side = new_side;
+        side = Math.abs(new_side);
     }
 
     public void setX_Coordinate(double new_x){

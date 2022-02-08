@@ -36,7 +36,7 @@ public class Main {
         System.out.println("------------------------------------------------------------");
         
         System.out.format("The palindromPrime stopwatch starts...\n"); timer.start();
-        System.out.format("Creating 1000 PalindromPrime...\n"); 
+        System.out.format("Creating 100 PalindromPrime...\n"); 
         
         int n=1,count=0;
         while(count<100){
