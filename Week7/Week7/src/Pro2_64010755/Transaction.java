@@ -25,4 +25,24 @@ public class Transaction {
     private void deposit(double amount){
         this.balance += amount;
     }
+
+    public char getType(){
+        return this.type;
+    }
+
+    public double getAmount(){
+        return this.amount;
+    }
+
+    public double getBalance(){
+        return this.balance;
+    }
+
+    public String getDescription(){
+        return this.description;
+    }
+
+    public Date getDateCreated(){
+        return this.dateCreated;
+    }
 }
