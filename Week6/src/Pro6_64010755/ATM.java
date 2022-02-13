@@ -3,15 +3,12 @@ package Pro6_64010755;
 import java.util.Scanner;
 
 public class ATM {
-    private Scanner input = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
     private double balance = 100;
-    
+
     public ATM(){}
 
     public void start(){
-        int id;
-        System.out.print("Enter an id: ");
-        id = input.nextInt();
         mainMenu();
     }
 

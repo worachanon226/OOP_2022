@@ -39,4 +39,12 @@ public class BMI {
     public double getWeight(){
         return weight;
     }
+
+    public int getAge(){
+        return age;
+    }
+
+    public void getInfo(){
+        System.out.format("%s, BMI = %f, %s\n",getName(),getBMI(),getInterpretation());
+    }
 }

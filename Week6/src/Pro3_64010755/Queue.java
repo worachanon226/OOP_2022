@@ -16,8 +16,18 @@ public class Queue {
     }
 
     public void enqueue(int v){
-        elements[current_idx] = v;
-        current_idx++;
+        if(current_idx+1 > this.size){
+            int[] temp = new int[this.size*=2];
+            System.arraycopy(elements, 0, temp, 0, current_idx);
+            elements = new int[this.size];
+            elements = temp;
+            elements[current_idx] = v;
+            current_idx++;
+        }
+        else{
+            elements[current_idx] = v;
+            current_idx++;
+        }
     }
 
     public int dequeue(){
