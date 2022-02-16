@@ -2,13 +2,16 @@ package Pro2_64010755;
 
 public class Course {
     private int students_num = 0;
+    private String courseName;
     private String[] students = new String[students_num];
 
-    public Course(){}
+    public Course(String name){
+        this.courseName = name;
+    }
 
     public void addStudent(String name){
         String[] temp = new String[students_num];
-        System.arraycopy(students, 0, temp, 0, students_num);
+        temp = students;
         students_num++;
         students = new String[students_num];
         students[students_num - 1] = name;

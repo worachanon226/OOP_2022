@@ -38,8 +38,7 @@ public class Queue {
     }
 
     public boolean empty(){
-        if(current_idx==0) return true;
-        else return false;
+        return (current_idx==0) ?  true : false;
     }
 
     public int getSize(){

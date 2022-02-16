@@ -1,8 +1,6 @@
 package Pro2_64010755;
 import java.util.ArrayList;
 
-import javax.print.event.PrintJobListener;
-
 public class Acount {
     private int id;
     private String name;

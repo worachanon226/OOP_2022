@@ -7,6 +7,7 @@ public class Main {
         ATM[] atm = new ATM[10];
 
         Scanner input = new Scanner(System.in);
+        
         System.out.print("Enter an id: ");
         int id = input.nextInt();
 
