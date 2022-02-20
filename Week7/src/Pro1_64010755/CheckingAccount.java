@@ -1,5 +1,4 @@
 package Pro1_64010755;
-
 import java.util.*;
 
 public class CheckingAccount extends Account {
@@ -16,12 +15,13 @@ public class CheckingAccount extends Account {
         this.dateCreated = new Date();
     }
 
-    public void withDraw(double amount){
+    public void withdraw(double amount){
+        System.out.println("Withdraw : " + amount);
         if(amount <= balance+overDraftLimit){
             balance -= amount;
         }
         else{
-            System.out.println("Error, you are withdrawing excessively.");
+            System.out.println("\"Error, you are withdrawing excessively.\"");
         }
     }
 

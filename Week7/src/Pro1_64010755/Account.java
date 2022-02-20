@@ -10,6 +10,8 @@ public class Account {
     public Account(){}
 
     public Account(int id,double balance){
+        System.out.println("Account");
+        System.out.println("Balance is: " + balance);
         this.id = id;
         this.balance = balance;
     }

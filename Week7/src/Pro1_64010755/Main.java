@@ -7,11 +7,11 @@ public class Main {
         System.out.println(customer1 + "\n");
 
         CheckingAccount customer2 = new CheckingAccount(2, 5000, 5000);
-        customer2.withDraw(10000);
+        customer2.withdraw(20000);
         System.out.println(customer2 + "\n");
 
         SavingAccount customer3 = new SavingAccount(3, 2000);
-        customer3.withDraw(1000);
+        customer3.withdraw(3000);
         System.out.println(customer3);
     }
 }
