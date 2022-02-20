@@ -1,15 +1,15 @@
 package Pro1_64010755;
 import java.util.*;
 
-public class Acount {
-    private int id = 0;
-    private double balance = 0;
-    private double annualInterestRate = 0;
-    private Date dateCreated = new Date();
+public class Account {
+    protected int id = 0;
+    protected double balance = 0;
+    protected double annualInterestRate = 0;
+    protected Date dateCreated = new Date();
 
-    public Acount(){}
+    public Account(){}
 
-    public Acount(int id,double balance){
+    public Account(int id,double balance){
         this.id = id;
         this.balance = balance;
     }
@@ -40,6 +40,7 @@ public class Acount {
 
     public void withDraw(int amount){
         balance -= amount;
+        System.out.println("Withdraw : " + amount);
     }
 
     public void deposit(int amount){
@@ -57,8 +58,9 @@ public class Acount {
     public Date getDateCreated(){
         return dateCreated;
     }
-}
 
-class SavingAcount extends Acount{
-
+    public String toString(){
+        return "Balance is " + balance + 
+        "\nThis account was created at" + dateCreated;
+    }
 }
