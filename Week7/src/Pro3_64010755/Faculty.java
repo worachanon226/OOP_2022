@@ -1,20 +1,20 @@
 package Pro3_64010755;
 
 public class Faculty extends Employee {
-    private double officeHours;
+    private int officeHours;
     private String rank;
     
-    public Faculty(String name, String address, String phone, String email, String office, double salary,double officeHours, String rank) {
+    public Faculty(String name, String address, String phone, String email, String office, double salary,int officeHours, String rank) {
         super(name, address, phone, email, office, salary);
         this.officeHours = officeHours;
         this.rank = rank;
     }
 
-    public double getOfficeHours() {
+    public int getOfficeHours() {
         return this.officeHours;
     }
 
-    public void setOfficeHours(double hours) {
+    public void setOfficeHours(int hours) {
         this.officeHours = hours;
     }
 

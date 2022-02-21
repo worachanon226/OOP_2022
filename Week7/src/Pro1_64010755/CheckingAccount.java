@@ -3,7 +3,9 @@ import java.util.*;
 
 public class CheckingAccount extends Account {
     
-    double overDraftLimit;
+    private double overDraftLimit;
+
+    CheckingAccount(){}
 
     CheckingAccount(int id,double balance, double overDraftLimit){
         System.out.println("Checking Account");
@@ -23,6 +25,14 @@ public class CheckingAccount extends Account {
         else{
             System.out.println("\"Error, you are withdrawing excessively.\"");
         }
+    }
+
+    public void setOverdraftLimit(double overdraftLimit){
+        this.overDraftLimit = overdraftLimit;
+    }
+
+    public double getOverdraftLimit(){
+        return this.overDraftLimit;
     }
 
     public String toString(){

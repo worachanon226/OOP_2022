@@ -3,6 +3,8 @@ import java.util.*;
 
 public class SavingAccount extends Account {
     
+    SavingAccount(){}
+
     SavingAccount(int id,double balance){
         System.out.println("Saving Account");
         System.out.println("Balance is: " + balance);

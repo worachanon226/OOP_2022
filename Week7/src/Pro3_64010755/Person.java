@@ -6,6 +6,8 @@ public class Person {
     private String phoneNumber;
     private String emailAddress;
 
+    public Person(){}
+
     public Person(String name, String address, String phone, String email){
         this.name = name;
         this.address = address;
@@ -29,11 +31,11 @@ public class Person {
         this.address = address;
     }
 
-    public String getPhoneNumber() {
+    public String getPhone() {
         return this.phoneNumber;
     }
 
-    public void setPhoneNumber(String phone) {
+    public void setPhone(String phone) {
         this.phoneNumber = phone;
     }
 
@@ -47,11 +49,11 @@ public class Person {
 
     public String ShowPersonal() {
         return String.format("%s\nName : %s\nAddress : %s\nPhone : %s\nEmail : %s\n",
-                getClass().getSimpleName(), getName(),getAddress(), getPhoneNumber(), getEmail());
+                getClass().getSimpleName(), getName(),getAddress(), getPhone(), getEmail());
     }
 
     public String toString() {
         return ShowPersonal() + String.format("\tPerson{name=%s, address={%s}, phone=%s, email=%s}\n",
-                getName(), getAddress(), getPhoneNumber(), getEmail());
+                getName(), getAddress(), getPhone(), getEmail());
     }
 }

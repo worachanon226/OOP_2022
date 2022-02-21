@@ -1,8 +1,10 @@
 package Pro3_64010755;
 
 public class Student extends Person {
-    static final String STATUS[] = {"Freshman", "Sophomore", "Junior", "Senior"};
+    private String STATUS[] = {"Freshman", "Sophomore", "Junior", "Senior"};
     private int status = 0;
+
+    Student(){}
 
     Student(String name,String address, String phone, String email, int status){
         super(name, address, phone, email);
