@@ -27,7 +27,7 @@ public class Faculty extends Employee {
     }
 
     public String toString() {
-        return super.toString() + String.format("\tFaculty{officeHours=%.2f, rank=%s}\n",
+        return super.toString() + String.format("\tFaculty{officeHours=%d, rank=%s}\n",
                 this.getOfficeHours(), this.getRank());
     }
 }
