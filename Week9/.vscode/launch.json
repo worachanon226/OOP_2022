@@ -8,10 +8,26 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
-            "mainClass": "Pro3_64010755.Main",
+            "mainClass": "Pro_9_1.Main",
             "projectName": "Week9_516e278a",
             "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
 
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Pro4_64010755.Main",
+            "projectName": "Week9_516e278a",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Pro3_64010755.Main",
+            "projectName": "Week9_516e278a",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
