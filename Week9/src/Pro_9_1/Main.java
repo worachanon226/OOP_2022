@@ -71,7 +71,7 @@ public class Main extends Application {
     }
 
     private String getOutput() {
-        String out = "Interest Rate       Monthly Payment          Total Payment\n";
+        String out = "Interest Rate      Monthly Payment         Total Payment\n";
         double loan;
         int years;
         try {
