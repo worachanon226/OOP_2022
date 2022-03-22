@@ -26,7 +26,7 @@ public class Main extends Application {
             }
         });
 
-        primaryStage.setScene(new Scene(car, 800, 400));
+        primaryStage.setScene(new Scene(car));
         primaryStage.show();
     }
 }

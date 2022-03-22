@@ -1,0 +1,70 @@
+package Pro6_64010755;
+
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Slider;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+    Fan fan = new Fan();
+    Button pause = new Button("Pause");
+    Button resume = new Button("Resume");
+    Button reverse = new Button("Reverse");
+    Slider slider = drawSlider();
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        primaryStage.setTitle("Program # 5");
+        BorderPane pane = new BorderPane();
+
+        pane.setCenter(fan);
+        pane.setTop(drawHbox());
+        pane.setBottom(slider);
+
+        fan.rateProperty().bind(slider.valueProperty());
+        actionEvent();
+
+        primaryStage.setScene(new Scene(pane, 250, 300));
+        primaryStage.show();
+    }
+
+    private Slider drawSlider() {
+        Slider slider = new Slider(0, 100, 0);
+        slider.setShowTickLabels(true);
+        slider.setShowTickMarks(true);
+        return slider;
+    }
+
+    private HBox drawHbox() {
+        HBox hbox = new HBox(5);
+        hbox.setPadding(new Insets(15, 15, 15, 15));
+        hbox.setAlignment(Pos.CENTER);
+        hbox.getChildren().addAll(pause, resume, reverse);
+        return hbox;
+    }
+
+    private void actionEvent() {
+        pause.setOnAction(e -> {
+            fan.pause();
+        });
+
+        resume.setOnAction(e -> {
+            fan.resume();
+        });
+
+        reverse.setOnAction(e -> {
+            fan.reverse();
+        });
+    }
+}
