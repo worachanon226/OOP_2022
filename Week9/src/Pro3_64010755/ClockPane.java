@@ -83,7 +83,7 @@ public class ClockPane extends Pane {
 
     public void setHourHandVisible(boolean hourHandVisible) {
         this.hourHandVisible = hourHandVisible;
-        paintClock(); // Repaint the clock
+        paintClock();
     }
 
     public boolean isMinuteHandVisible() {
@@ -92,7 +92,7 @@ public class ClockPane extends Pane {
 
     public void setMinuteHandVisible(boolean minuteHandVisible) {
         this.minuteHandVisible = minuteHandVisible;
-        paintClock(); // Repaint the clock
+        paintClock();
     }
 
     public boolean isSecondHandVisible() {
@@ -101,7 +101,7 @@ public class ClockPane extends Pane {
 
     public void setSecondHandVisible(boolean secondHandVisible) {
         this.secondHandVisible = secondHandVisible;
-        paintClock(); // Repaint the clock
+        paintClock();
     }
 
     public void setCurrentTime() {

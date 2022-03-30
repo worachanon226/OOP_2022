@@ -32,6 +32,7 @@ public class Main extends Application {
         buttonEvent();
 
         primaryStage.setScene(new Scene(pane, 250, 300));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

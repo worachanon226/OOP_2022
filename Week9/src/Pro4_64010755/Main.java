@@ -11,22 +11,22 @@ public class Main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("Program # 4");
 
         Car car = new Car();
-        car.setOnMousePressed(e -> car.pause());
+        car.setOnMouseClicked(e -> car.pause());
         car.setOnMouseReleased(e -> car.play());
 
         car.setOnKeyPressed(e -> {
-            if (e.getCode() == KeyCode.UP) {
+            if (e.getCode() == KeyCode.UP)
                 car.increaseSpeed();
-            } else if (e.getCode() == KeyCode.DOWN) {
+            else if (e.getCode() == KeyCode.DOWN)
                 car.decreaseSpeed();
-            }
         });
-
-        primaryStage.setScene(new Scene(car));
+        Scene scene = new Scene(car, 600, 100);
+        primaryStage.setScene(scene);
         primaryStage.show();
+        car.requestFocus();
     }
 }
