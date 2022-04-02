@@ -24,36 +24,37 @@ public class Main {
         Double fullSum = sum(full);
         Double all = assiSum + assoSum + fullSum;
 
-        System.out.printf("Assistant professors: $%.2f\n", assiSum);
-        System.out.printf("Associate professors: $%.2f\n", assoSum);
-        System.out.printf("Full professors:      $%.2f\n", fullSum);
-        System.out.printf("All faculty:          $%.2f\n", all);
+        System.out.printf("Assistant : $%.2f\n", assiSum);
+        System.out.printf("Associate : $%.2f\n", assoSum);
+        System.out.printf("Full :      $%.2f\n", fullSum);
+        System.out.printf("All :       $%.2f\n", all);
 
-        System.out.printf("Assistant professors: $%.2f\n",
+        System.out.printf("Assistant Average: $%.2f\n",
                 (assiSum / assistant.size()));
-        System.out.printf("Associate professors: $%.2f\n",
+        System.out.printf("Associate Average: $%.2f\n",
                 (assoSum / associate.size()));
-        System.out.printf("Full professors:      $%.2f\n",
+        System.out.printf("Full Average:      $%.2f\n",
                 (fullSum / full.size()));
-        System.out.printf("All faculty:          $%.2f\n",
+        System.out.printf("All Average:       $%.2f\n",
                 (all / (assistant.size() + associate.size() + full.size())));
     }
 
     private static double sum(Vector<Double> v) {
         double sum = 0;
-
-        for (int i = 0; i < v.size(); i++)
+        for (int i = 0; i < v.size(); i++) {
             sum += v.get(i);
+        }
 
         return sum;
     }
 
     private static void separate(String r, Double s) {
-        if (r == "assistant")
+        if (r.equals("assistant")) {
             assistant.add(s);
-        if (r == "associate")
+        } else if (r.equals("associate")) {
             associate.add(s);
-        if (r == "full")
+        } else {
             full.add(s);
+        }
     }
 }
