@@ -26,16 +26,9 @@ public class Main {
     }
 
     private static double genSalary(String r) {
-        int ch = 0;
-        for (int i = 0; i < 3; i++) {
-            if (rr[i] == r) {
-                ch = i;
-                break;
-            }
-        }
-        if (ch == 0)
+        if (r.equals("assistant"))
             return 50000 + (double) (Math.random() * 30001);
-        else if (ch == 1)
+        else if (r.equals("associate"))
             return 60000 + (double) (Math.random() * 50001);
         else
             return 75000 + (double) (Math.random() * 55001);
