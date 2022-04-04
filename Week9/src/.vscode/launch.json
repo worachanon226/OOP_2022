@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "src_17b26ddf"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Pro1_64010755.Main",
+            "projectName": "src_17b26ddf",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "Pro2_64010755.Main",
+            "projectName": "src_17b26ddf",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "Pro3_64010755.Main",
+            "projectName": "src_17b26ddf",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(3)",
+            "request": "launch",
+            "mainClass": "Pro4_64010755.Main",
+            "projectName": "src_17b26ddf",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(4)",
+            "request": "launch",
+            "mainClass": "Pro5_64010755.Main",
+            "projectName": "src_17b26ddf",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(5)",
+            "request": "launch",
+            "mainClass": "Pro6_64010755.Main",
+            "projectName": "src_17b26ddf",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(6)",
+            "request": "launch",
+            "mainClass": "Pro_9_1.Main",
+            "projectName": "src_17b26ddf",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

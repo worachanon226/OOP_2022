@@ -13,7 +13,7 @@ public class Main {
 
         try {
             System.out.println("Value : " + a[input.nextInt()]);
-        } catch (Exception e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Out of Bounds.");
         }
     }
