@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Triangle {
     public static void main(String[] args) {
         try {
-            Triangle triangle = new Triangle(1, 1, 4);
+            Triangle triangle = new Triangle(3, 4, 5);
         } catch (Exception e) {
             System.out.println(e);
         }
