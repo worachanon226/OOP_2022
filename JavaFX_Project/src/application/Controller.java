@@ -1,10 +1,10 @@
 package application;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.io.*;
+import java.net.*;
+import java.util.*;
 
 import javafx.collections.ObservableList;
-import javafx.collections.ObservableSet;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -13,7 +13,7 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
 
-public class Controller implements Initializable{
+public class Controller implements Initializable {
 
     @FXML
 	private WebView webView;
@@ -31,20 +31,31 @@ public class Controller implements Initializable{
     private String homePage;
 
     private double webZoom;
+
+    private URL url;
+    private URLConnection urlConnection;
+    private InputStream inputStream;
 	
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
+	public void initialize (URL arg0, ResourceBundle arg1) {
 		
 		engine = webView.getEngine();
         homePage = "www.google.com";
         webZoom = 1;
 
         textField.setText(homePage);
-		loadPage();
+		try {
+            loadPage();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 	}
 	
-	public void loadPage() {
+	public void loadPage() throws IOException{
+        url = new URL("http://"+textField.getText());
 		engine.load("http://"+textField.getText());
+
+        urlConnection = url.openConnection();
 	}
 
 	public void refreshPage(){
@@ -87,9 +98,21 @@ public class Controller implements Initializable{
         textField.setText(entries.get(history.getCurrentIndex()).getUrl());
     }
 
-    public void getSourceCode(){
-        engine.load(engine.getDocument().toString());
+    public void getSourceCode() throws IOException{
+
+        System.out.println("Source Code : " + textField.getText());
+
+        inputStream = urlConnection.getInputStream();
         
+        int input;
+
+        do {
+            input = inputStream.read();
+
+            if(input!=-1) System.out.print((char)input);
+            if((char)input == '>') System.out.println();
+            
+        } while (input!=-1);
     }
 
 }
