@@ -103,14 +103,19 @@ public class Controller implements Initializable {
         System.out.println("Source Code : " + textField.getText());
 
         inputStream = urlConnection.getInputStream();
-        
+
         int input;
 
         do {
             input = inputStream.read();
 
-            if(input!=-1) System.out.print((char)input);
-            if((char)input == '>') System.out.println();
+            if(input!=-1) {
+                System.out.print((char)input);
+            }
+
+            if((char)input == '>') {
+                System.out.println();
+            }
             
         } while (input!=-1);
     }
