@@ -6,11 +6,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Main",
+            "name": "Launch Controller",
             "request": "launch",
-            "mainClass": "Main",
-            "projectName": "JavaFX_Project_64bcd09",
-            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-17.0.1\\lib\" --add-modules javafx.web,javafx.fxml"
+            "mainClass": "Controller",
+            "projectName": "For_Final_e9fb24a5",
+            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-17.0.1\\lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
