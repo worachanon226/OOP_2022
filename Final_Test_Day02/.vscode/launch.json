@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Pro2",
+            "request": "launch",
+            "mainClass": "Pro2",
+            "projectName": "Final_Test_Day02_19101935"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pro4",
+            "request": "launch",
+            "mainClass": "Pro4",
+            "projectName": "Final_Test_Day02_19101935",
+            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-17.0.1\\lib\" --add-modules javafx.controls,javafx.fxml,javafx.media"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pro3",
+            "request": "launch",
+            "mainClass": "Pro3",
+            "projectName": "Final_Test_Day02_19101935",
+            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-17.0.1\\lib\" --add-modules javafx.controls,javafx.fxml,javafx.media"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pro1",
+            "request": "launch",
+            "mainClass": "Pro1",
+            "projectName": "Final_Test_Day02_19101935"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch JavaFX_temp",
+            "request": "launch",
+            "mainClass": "JavaFX_temp",
+            "projectName": "Final_Test_Day02_19101935",
+            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-17.0.1\\lib\" --add-modules javafx.controls,javafx.fxml,javafx.media"
+        },
+        {
+            "type": "java",
+            "name": "Launch Java_temp",
+            "request": "launch",
+            "mainClass": "Java_temp",
+            "projectName": "Final_Test_Day02_19101935"
+        }
+    ]
+}

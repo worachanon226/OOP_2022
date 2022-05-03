@@ -27,11 +27,11 @@ public class Main extends Application {
         clockPane.setMinuteHandVisible(true);
         clockPane.setSecondHandVisible(true);
 
-        String hString = ((clockPane.getHour() >= 10) ? "" : "0") + Integer.toString(clockPane.getHour());
-        String mString = ((clockPane.getMinute() >= 10) ? "" : "0") + Integer.toString(clockPane.getMinute());
-        String sString = ((clockPane.getSecond() >= 10) ? "" : "0") + Integer.toString(clockPane.getSecond());
+        // String hString = ((clockPane.getHour() >= 10) ? "" : "0") + Integer.toString(clockPane.getHour());
+        // String mString = ((clockPane.getMinute() >= 10) ? "" : "0") + Integer.toString(clockPane.getMinute());
+        // String sString = ((clockPane.getSecond() >= 10) ? "" : "0") + Integer.toString(clockPane.getSecond());
 
-        text.setText(hString + ":" + mString + ":" + sString);
+        // text.setText(hString + ":" + mString + ":" + sString);
 
         text.setTextAlignment(TextAlignment.CENTER);
         text.setFont(Font.font("Veradana", 20));

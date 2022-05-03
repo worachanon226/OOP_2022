@@ -16,7 +16,7 @@
             "request": "launch",
             "mainClass": "Main",
             "projectName": "WebBrowser_92e43b8f",
-            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-17.0.1\\lib\" --add-modules javafx.web,javafx.fxml"
+            "vmArgs": "--module-path \"C:\\Program Files\\javafx-sdk-17.0.1\\lib\" --add-modules javafx.web,javafx.fxml,javafx.controls"
         }
     ]
 }

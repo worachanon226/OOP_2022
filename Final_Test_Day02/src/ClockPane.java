@@ -1,11 +1,5 @@
-package Pro4;
-
-import java.sql.Time;
-import java.util.*;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
-
-import javafx.animation.AnimationTimer;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.geometry.Pos;
@@ -35,6 +29,7 @@ public class ClockPane extends Pane {
         animation = new Timeline(new KeyFrame(Duration.seconds(1), e->{
             setCurrentTime();
         }));
+        
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
     }
